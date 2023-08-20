@@ -177,9 +177,9 @@ async function generatePrompts() {
           const input = `Give me ${promptCount} ${topic}`;
           await launchCountdown(10);
           const lineCount = await goAskGpt(input, HistoryMode.oneShot);
-          success = lineCount >= 1.0 * promptCount;
+          success = lineCount >= 0.8 * promptCount;
           if (!success) {
-            console.log(`Got ${lineCount} lines, expected ${2 * promptCount} lines.`);
+            console.log(`Got ${lineCount} lines, expected ${promptCount} lines.`);
             success = lineCount >= 0.5 * promptCount;
             if (success) {
               console.log(`Waiting before continuing.`);

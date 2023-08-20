@@ -46,9 +46,9 @@ const topics: string[] = [
   "Famous names",
   "Historical names",
   "Modern names",
-  "Western names",
-  "Sci-fi names",
-  "Fantasy names",
+  "Western (genre) names",
+  "Sci-fi (genre) names",
+  "Fantasy (genre) names",
   "Alien names",
   "Futuristic names",
   "Protoss names",
@@ -64,5 +64,10 @@ if (false) {
 }
 
 export function getTopics(): string[] {
-  return [...topics];
+  let result = [];
+  for (const topic of topics) {
+    result.push(`male ${topic}`);
+    result.push(`female ${topic}`);
+  }
+  return result;
 }

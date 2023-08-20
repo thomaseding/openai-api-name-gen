@@ -1,0 +1,30 @@
+{
+  "name": "openai-api-name-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomaseding/openai-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomaseding/openai-api/issues"
+  },
+  "homepage": "https://github.com/thomaseding/openai-api#readme",
+  "dependencies": {
+    "@types/node-fetch": "^2.6.3",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11"
+  }
+}

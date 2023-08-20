@@ -1,0 +1,27 @@
+# .gitignore
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+
+# TypeScript build output
+dist/
+out/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# dotenv environment variables file
+.env
+
+# Docker files
+.dockerignore
